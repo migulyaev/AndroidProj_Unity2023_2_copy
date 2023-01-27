@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.unity3d.player"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-feature android:glEsVersion="0x00030000" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <application android:extractNativeLibs="true">
+    <meta-data android:name="unity.splash-mode" android:value="0" />
+    <meta-data android:name="unity.splash-enable" android:value="True" />
+    <meta-data android:name="unity.launch-fullscreen" android:value="True" />
+    <meta-data android:name="unity.allow-resizable-window" android:value="False" />
+    <meta-data android:name="unity.auto-report-fully-drawn" android:value="true" />
+    <meta-data android:name="unity.strip-engine-code" android:value="true" />
+    <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:enabled="true" android:exported="true" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.unity3d.player.UnityPlayerActivity3" android:resizeableActivity="false" android:screenOrientation="userPortrait">
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+    </activity>
+  </application>
+
+  <dist:module
+      dist:instant="false"
+      dist:title="@string/test3">
+    <dist:delivery>
+      <dist:install-time/>
+    </dist:delivery>
+    <dist:fusing dist:include="true" />
+  </dist:module>
+</manifest>

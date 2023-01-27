@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ColorHole3D</string>
+    <string name="game_view_content_description">Game view</string>
+    <string name="test">game</string>
+    <string name="test2">game2</string>
+    <string name="test3">game3</string>
+</resources>

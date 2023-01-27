@@ -1,0 +1,78 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m284D38FF6F7726F2EE30CDDE74B1E6A618F8E9E7 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mA6D47CCEA88071443B384A424039C277FC11D2B2 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_m811415C97552021F64E9F996BBE239F0232131C9 (void);
+extern void TexturedSceneLoader_Start_m38735D1AABB38F8A8BFBE7CDDCFA7D914EBA4F0E (void);
+extern void TexturedSceneLoader_DownloadAssetBundles_m2B5E8C0C829D00E577C66195D2E40BD18A158282 (void);
+extern void TexturedSceneLoader__ctor_mED4DE167F6865F180AEC3FD17A0E647A590D5126 (void);
+extern void U3CDownloadAssetBundlesU3Ed__1__ctor_m4AD5AF7D2C2006BF0034B1AA79001CF54ECECC14 (void);
+extern void U3CDownloadAssetBundlesU3Ed__1_System_IDisposable_Dispose_mCF4E1634BEC11A426B981C88C7AE0593F85F2789 (void);
+extern void U3CDownloadAssetBundlesU3Ed__1_MoveNext_m0C7C3625732044B167EBC32DD45E3D3E803CD506 (void);
+extern void U3CDownloadAssetBundlesU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF1677AE45FE1D0BE4D21A19569282FFDE6F97E88 (void);
+extern void U3CDownloadAssetBundlesU3Ed__1_System_Collections_IEnumerator_Reset_mBD9EB9BF93D631D23FFDE4E99E7A26D29B4ABB2F (void);
+extern void U3CDownloadAssetBundlesU3Ed__1_System_Collections_IEnumerator_get_Current_m2041761243F7F952EA2C21669EF82E9DCF1DB156 (void);
+extern void TextureFormatDisplayer_Start_mF683E8BADF202BEDC40DF111603A18E2791DC342 (void);
+extern void TextureFormatDisplayer__ctor_mFB3929E743648602E540213533AF05F1F88A6091 (void);
+static Il2CppMethodPointer s_methodPointers[14] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m284D38FF6F7726F2EE30CDDE74B1E6A618F8E9E7,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mA6D47CCEA88071443B384A424039C277FC11D2B2,
+	UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_m811415C97552021F64E9F996BBE239F0232131C9,
+	TexturedSceneLoader_Start_m38735D1AABB38F8A8BFBE7CDDCFA7D914EBA4F0E,
+	TexturedSceneLoader_DownloadAssetBundles_m2B5E8C0C829D00E577C66195D2E40BD18A158282,
+	TexturedSceneLoader__ctor_mED4DE167F6865F180AEC3FD17A0E647A590D5126,
+	U3CDownloadAssetBundlesU3Ed__1__ctor_m4AD5AF7D2C2006BF0034B1AA79001CF54ECECC14,
+	U3CDownloadAssetBundlesU3Ed__1_System_IDisposable_Dispose_mCF4E1634BEC11A426B981C88C7AE0593F85F2789,
+	U3CDownloadAssetBundlesU3Ed__1_MoveNext_m0C7C3625732044B167EBC32DD45E3D3E803CD506,
+	U3CDownloadAssetBundlesU3Ed__1_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF1677AE45FE1D0BE4D21A19569282FFDE6F97E88,
+	U3CDownloadAssetBundlesU3Ed__1_System_Collections_IEnumerator_Reset_mBD9EB9BF93D631D23FFDE4E99E7A26D29B4ABB2F,
+	U3CDownloadAssetBundlesU3Ed__1_System_Collections_IEnumerator_get_Current_m2041761243F7F952EA2C21669EF82E9DCF1DB156,
+	TextureFormatDisplayer_Start_mF683E8BADF202BEDC40DF111603A18E2791DC342,
+	TextureFormatDisplayer__ctor_mFB3929E743648602E540213533AF05F1F88A6091,
+};
+static const int32_t s_InvokerIndices[14] = 
+{
+	7552,
+	7584,
+	5147,
+	5147,
+	5049,
+	5147,
+	4159,
+	5147,
+	4964,
+	5049,
+	5147,
+	5049,
+	5147,
+	5147,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Google_Play_AssetDelivery_Samples_TextureTargetingDemo_CodeGenModule;
+const Il2CppCodeGenModule g_Google_Play_AssetDelivery_Samples_TextureTargetingDemo_CodeGenModule = 
+{
+	"Google.Play.AssetDelivery.Samples.TextureTargetingDemo.dll",
+	14,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
