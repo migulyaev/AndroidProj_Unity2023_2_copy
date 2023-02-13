@@ -1,14 +1,13 @@
 package test
 
+import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
-import com.google.android.play.core.splitinstall.SplitInstallManager
-import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
-import com.google.android.play.core.splitinstall.SplitInstallRequest
-import com.google.android.play.core.splitinstall.SplitInstallSessionState
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.play.core.splitcompat.SplitCompat
+import com.google.android.play.core.splitinstall.*
 import com.google.android.play.core.splitinstall.model.SplitInstallSessionStatus
 import com.template.jellymerge.R
 
@@ -37,6 +36,10 @@ class MainActivity : AppCompatActivity() {
                         .addModule("unityLibrary3")
                         .build()
                 manager.startInstall(request)
+                    .addOnCompleteListener {
+                        val newContext = context.createPackageContext(context.packageName, 0)
+
+                    }
             }
         }
         findViewById<Button>(R.id.updateStatus).apply {
@@ -44,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 updateStatus()
             }
         }
+
         openGame = findViewById<Button>(R.id.launch).apply {
             setOnClickListener {
                 val intent = Intent().apply {
@@ -74,6 +78,14 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(base)
+        // Emulates installation of on demand modules using SplitCompat.
+        SplitCompat.installActivity(this)
+    }
+
+
 
     private fun updateStatus() {
         if (manager.installedModules.contains("unityLibrary3")) {
