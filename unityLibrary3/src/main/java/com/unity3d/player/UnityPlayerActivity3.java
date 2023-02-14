@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Build;
@@ -35,6 +36,7 @@ public class UnityPlayerActivity3 extends Activity implements IUnityPlayerLifecy
     {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+
 
         SplitInstallHelper.loadLibrary(this, "il2cpp");
         SplitInstallHelper.loadLibrary(this, "main");
