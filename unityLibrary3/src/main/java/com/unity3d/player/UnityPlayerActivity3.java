@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Build;
@@ -12,6 +13,7 @@ import android.view.MotionEvent;
 import android.view.Window;
 
 import com.google.android.play.core.splitcompat.SplitCompat;
+import com.google.android.play.core.splitinstall.SplitInstallHelper;
 
 public class UnityPlayerActivity3 extends Activity implements IUnityPlayerLifecycleEvents, IUnityPermissionRequestSupport
 {
@@ -34,6 +36,11 @@ public class UnityPlayerActivity3 extends Activity implements IUnityPlayerLifecy
     {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+
+
+        SplitInstallHelper.loadLibrary(this, "il2cpp");
+        SplitInstallHelper.loadLibrary(this, "main");
+        SplitInstallHelper.loadLibrary(this, "unity");
 
         String cmdLine = updateUnityCommandLineArguments(getIntent().getStringExtra("unity"));
         getIntent().putExtra("unity", cmdLine);
