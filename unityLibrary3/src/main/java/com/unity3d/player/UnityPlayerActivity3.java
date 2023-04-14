@@ -12,6 +12,7 @@ import android.view.MotionEvent;
 import android.view.Window;
 
 import com.google.android.play.core.splitcompat.SplitCompat;
+import com.google.android.play.core.splitinstall.SplitInstallHelper;
 
 public class UnityPlayerActivity3 extends Activity implements IUnityPlayerLifecycleEvents, IUnityPermissionRequestSupport
 {
@@ -47,6 +48,9 @@ public class UnityPlayerActivity3 extends Activity implements IUnityPlayerLifecy
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(newBase);
         SplitCompat.installActivity(this);
+        SplitInstallHelper.loadLibrary(this, "il2cpp");
+        SplitInstallHelper.loadLibrary(this, "main");
+        SplitInstallHelper.loadLibrary(this, "unity");
     }
 
     // When Unity player unloaded move task to background

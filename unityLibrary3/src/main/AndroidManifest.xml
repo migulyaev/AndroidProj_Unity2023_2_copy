@@ -25,7 +25,7 @@
       dist:instant="false"
       dist:title="@string/test3">
     <dist:delivery>
-      <dist:install-time/>
+      <dist:on-demand/>
     </dist:delivery>
     <dist:fusing dist:include="true" />
   </dist:module>
