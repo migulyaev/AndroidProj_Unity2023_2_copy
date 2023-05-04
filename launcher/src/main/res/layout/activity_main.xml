@@ -16,18 +16,18 @@
             android:id="@+id/updateStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Обновить статус" />
+            android:text="Refresh status" />
 
         <Button
             android:id="@+id/download"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Скачать модуль" />
+            android:text="Download module" />
 
         <Button
             android:id="@+id/launch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Запустить игру" />
+            android:text="Launch game" />
 
 </LinearLayout>
